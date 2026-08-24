@@ -1,26 +1,26 @@
 # Front-end spec
-1.ทำให้ user ใช้งานง่าย
-2.มีหน้า login register โดยหน้า register สำหรับ user เเละ login สำหรับทุก role
-3.มีระบบที่เสถียร
-4.พื้นที่ประชาสัมพันธ์
-5.ระบบ notification เมื่อ admin หรือ operator สร้างการเเจ้งเตือน
-6.รองรับ responsive ของทั้ง Tablet เเละ Phone
-7.รองรับ Browser IOS เเละ andriod
+1. ทำให้ user ใช้งานง่าย
+2. มีหน้า login register โดยหน้า register สำหรับ user เเละ login สำหรับทุก role
+3. มีระบบที่เสถียร
+4. พื้นที่ประชาสัมพันธ์
+5. ระบบ notification เมื่อ admin หรือ operator สร้างการเเจ้งเตือน
+6. รองรับ responsive ของทั้ง Tablet เเละ Phone
+7. รองรับ Browser IOS เเละ andriod
 
 
 # Front-end for admin
-1.มี panel หน้าเฉพาะสำหรับ role admin
-2.การ login เข้า admin user สามารถเข้าได้ทางหน้า login
-3.มีสิทธิ์ควบคุมเหนือ user อื่นๆ
+1. มี panel หน้าเฉพาะสำหรับ role admin
+2. การ login เข้า admin user สามารถเข้าได้ทางหน้า login
+3. มีสิทธิ์ควบคุมเหนือ user อื่นๆ
 
 
 # Front-end spec for user
-1.การเข้าใช้งานทั่วไปในระบบของ web application
-2.มีหน้าเเสดงโปรไฟล์ของ user ซึ่งสามารถเเก้ใขข้อมูลส่วนตัวได้
-3.register เเล้วค่อย login
+1. การเข้าใช้งานทั่วไปในระบบของ web application
+2. มีหน้าเเสดงโปรไฟล์ของ user ซึ่งสามารถเเก้ใขข้อมูลส่วนตัวได้
+3. register เเล้วค่อย login
 
 
 # Front-end spec for operator
-1.หน้าต่างสำหรับจัดการ Web application ของ operator ไม่ใช่อันเดียวกับของ Admin
-2.สามารถจัดการระบบ ส่งการแจ้งเตือน (Notification) และสิทธิ์อื่นๆ ได้ใกล้เคียงกับ Admin
-3.ไม่สามารถเข้าถึง ดู หรือแก้ไขข้อมูลที่มีความเสี่ยงสูงได้ (เช่น ข้อมูลเชิงการเงิน, รหัสผ่านหลังบ้านของ User, หรือการตั้งค่าระบบหลัก)
+1. หน้าต่างสำหรับจัดการ Web application ของ operator ไม่ใช่อันเดียวกับของ Admin
+2. สามารถจัดการระบบ ส่งการแจ้งเตือน (Notification) และสิทธิ์อื่นๆ ได้ใกล้เคียงกับ Admin
+3. ไม่สามารถเข้าถึง ดู หรือแก้ไขข้อมูลที่มีความเสี่ยงสูงได้ (เช่น ข้อมูลเชิงการเงิน, รหัสผ่านหลังบ้านของ User, หรือการตั้งค่าระบบหลัก)
