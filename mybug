@@ -1,0 +1,2 @@
+Change the line to “This is the mybug branch at 50%”
+Add one line “Just ok”
