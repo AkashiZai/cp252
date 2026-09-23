@@ -2,10 +2,10 @@ class Expense {
   /**
    * Represents an Expense.
    * @constructor
-   * @param {Date|string} date - The date of the expense.
+   * @param {string} date - The date of the expense.
    * @param {number} income - The income amount.
    * @param {number} expense - The expense amount.
-   * @param {string} [detail=''] - Details or description of the transaction.
+   * @param {string} detail - Details or description of the transaction.
    */
   constructor(date, income, expense, detail) {
     this.date = date;
