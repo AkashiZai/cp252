@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="7" failures="0" errors="0" time="0.531">
+  <testsuite name="Count user" errors="0" failures="0" skipped="0" timestamp="2026-10-21T04:04:12" time="0.339" tests="7">
+    <testcase classname="Count user default user count" name="Count user default user count" time="0.004">
+    </testcase>
+    <testcase classname="Count user clear user and Count" name="Count user clear user and Count" time="0.001">
+    </testcase>
+    <testcase classname="remove user Remove one" name="remove user Remove one" time="0">
+    </testcase>
+    <testcase classname="remove user Remove two users decreases count by 2" name="remove user Remove two users decreases count by 2" time="0.001">
+    </testcase>
+    <testcase classname="remove user Remove two users when users are cleared returns null" name="remove user Remove two users when users are cleared returns null" time="0.001">
+    </testcase>
+    <testcase classname="findUserbyEmail should return username when email exists" name="findUserbyEmail should return username when email exists" time="0.001">
+    </testcase>
+    <testcase classname="findUserbyEmail should return null when email does not exist" name="findUserbyEmail should return null when email does not exist" time="0.001">
+    </testcase>
+  </testsuite>
+</testsuites>

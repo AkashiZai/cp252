@@ -1,0 +1,21 @@
+<!-- views/users.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+</head>
+<body>
+    <h1>Users</h1>
+    <ul>
+        <% users.forEach(function(user) { %>
+            <li> <img src="/images/images.jpeg" width="50" height="50"> <%= user.name %> - <%= user.email %></li>
+        <% }); %>
+    </ul>
+    Total: <%= utotal %> <br>
+    <img src="/images/icons8-add-48.png"><a href="/">Add user</a><br>
+    <img src="/images/icons8-clear-shopping-cart-48.png"><a href="/clear">Remove all</a>
+</body>
+</html>
