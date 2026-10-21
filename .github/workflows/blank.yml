@@ -26,8 +26,8 @@ jobs:
         node-version: ${{ matrix.node-version }}
 
     - name: Build
-      run: cd lab8js %% npm install
+      run: cd lab8js && npm install
 
     - name: Test
-      run: cd lab8js %% npm run test
+      run: cd lab8js && npm run test
         
