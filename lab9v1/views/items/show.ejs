@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= item.name %></title>
+</head>
+<body>
+  <h1><%= item.name %></h1>
+  <p><strong>Category:</strong> <%= item.category %></p>
+  <p><strong>Detail:</strong> <%= item.detail %></p>
+  
+  <h3>Comments</h3>
+  <div id="comments">
+    <% item.comments.forEach(comment => { %>
+      <div>
+        <p><%= comment.text %></p>
+        <small><%= comment.timestamp %></small>
+      </div>
+    <% }) %>
+  </div>
+  
+  <form id="commentForm">
+    <input type="text" id="commentText" placeholder="Add a comment" required>
+    <button type="submit">Add Comment</button>
+  </form>
+  
+  <a href="/">Back to Items</a>
+
+  <script>
+    document.getElementById('commentForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const comment = document.getElementById('commentText').value;
+      
+      const response = await fetch('/api/items/<%= item.id %>/comments', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ comment })
+      });
+      
+      if (response.ok) {
+        location.reload();
+      }
+    });
+  </script>
+</body>
+</html>
