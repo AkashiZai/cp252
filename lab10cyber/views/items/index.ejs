@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Inventory Tracker</title>
+</head>
+<body>
+  <div style="background:#fdd;border:2px solid #c00;padding:6px 12px;font:14px monospace;text-align:center">
+    ⚠ DELIBERATELY VULNERABLE APP — SECURITY TRAINING ONLY — DO NOT RUN PUBLICLY
+  </div>
+  <h1>Inventory Items</h1>
+  <a href="/items/new">Add New Item</a> | 
+  <a href="/categories/new">Add Category</a>
+  
+  <% if (items.length === 0) { %>
+    <p>No items found.</p>
+  <% } else { %>
+    <ul>
+      <% items.forEach(item => { %>
+        <li>
+          <a href="/items/<%= item.id %>"><%= item.name %></a> 
+          - <%= item.category %> 
+          (<%= item.comments.length %> comments)
+        </li>
+      <% }) %>
+    </ul>
+  <% } %>
+</body>
+</html>
