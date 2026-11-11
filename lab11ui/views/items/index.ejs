@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Inventory Tracker</title>
+</head>
+<body>
+  <h1>Inventory Items</h1>
+  <a href="/items/new">Add New Item</a> | 
+  <a href="/categories/new">Add Category</a>
+  
+  <% if (items.length === 0) { %>
+    <p>No items found.</p>
+  <% } else { %>
+    <ul>
+      <% items.forEach(item => { %>
+        <li>
+          <a href="/items/<%= item.id %>"><%= item.name %></a> 
+          - <%= item.category %> 
+          (<%= item.comments.length %> comments)
+        </li>
+      <% }) %>
+    </ul>
+  <% } %>
+</body>
+</html>

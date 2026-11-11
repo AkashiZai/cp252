@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add New Item</title>
+</head>
+<body>
+  <h1>Add New Item</h1>
+  <form action="/items" method="POST">
+    <div>
+      <label>Name:</label>
+      <input type="text" name="name" required>
+    </div>
+    <div>
+      <label>Category:</label>
+      <select name="category" required>
+        <% categories.forEach(category => { %>
+          <option value="<%= category %>"><%= category %></option>
+        <% }) %>
+      </select>
+    </div>
+    <div>
+      <label>Detail:</label>
+      <textarea name="detail"></textarea>
+    </div>
+    <button type="submit">Add Item</button>
+  </form>
+  <a href="/">Back to Items</a>
+</body>
+</html>
